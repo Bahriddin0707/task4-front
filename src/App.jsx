@@ -1,10 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Login, Register, Dashboard, ProtectedRoute } from "../pages";
+import { Login, Register, Dashboard, ProtectedRoute } from "./pages";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useGlobalContext } from "../context";
-import { action as loginAction } from "../pages/Login";
-import { action as registerAction } from "../pages/Register";
+import { useGlobalContext } from "./context";
+import { action as loginAction } from "./pages/Login";
+import { action as registerAction } from "./pages/Register";
 
 const App = () => {
   const { loginUser, registerUser } = useGlobalContext();
