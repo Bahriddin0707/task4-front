@@ -1,6 +1,6 @@
 import { useGlobalContext } from "../context";
 import { FaRegMinusSquare } from "react-icons/fa";
-import { formatTime } from "../utils";
+import { formatTime } from "../utils/index";
 
 const UsersTable = () => {
   const { selectAllUsers, selectedUsers, handleSelectedUser, users } =
