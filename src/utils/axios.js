@@ -2,7 +2,7 @@ import axios from "axios";
 import { getUserFromLocalStorage } from "./localStorage";
 
 const customFetch = axios.create({
-  baseURL: "http://localhost:3000/",
+  baseURL: "https://bahriddin-task-4-backend-server.onrender.com/",
 });
 //
 customFetch.interceptors.request.use((config) => {
