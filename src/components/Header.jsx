@@ -28,20 +28,20 @@ const Header = () => {
   }, [theme]);
 
   return (
-    <header className="bg-neutral py-2 text-neutral-content">
+    <header className="bg-slate-600 py-6 text-neutral-content">
       <div className="mx-auto max-w-6xl px-8 flex justify-end">
-        <div className="flex gap-x-6 justify-center items-center">
+        <div className="flex gap-x-8 justify-center items-center">
           <label className="swap swap-rotate">
             <input type="checkbox" onChange={handleTheme} />
-            <BsSunFill className="swap-on h-4 w-4" />
-            <BsMoonFill className="swap-off h-4 w-4" />
+            <BsSunFill className="swap-on h-6 w-6" />
+            <BsMoonFill className="swap-off h-6 w-6" />
           </label>
-          <p className="responsive-text">
+          <p className="responsive-text text-xl">
             Hello, <span className="text-primary">{user.name}</span>
           </p>
           <Link
             to="/"
-            className="link link-hover responsive-text text-primary"
+            className="link link-hover responsive-text text-primary text-xl"
             onClick={logoutUser}
           >
             Logout

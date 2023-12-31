@@ -4,7 +4,7 @@ import { getUserFromLocalStorage } from "./localStorage";
 const customFetch = axios.create({
   baseURL: "https://bahriddin-task-4-backend-server.onrender.com/",
 });
-//
+
 customFetch.interceptors.request.use((config) => {
   const user = getUserFromLocalStorage();
   if (user) {
